@@ -39,6 +39,8 @@ sleep(3)
 
 # Sayfadaki tüm "course.listing" sınıfına sahip elemanları bul
 listOfcourses = driver.find_elements(By.CLASS_NAME, "course.listing")
+
+
 # Sayfadaki tüm "course.listing" sınıfına sahip elemanları bul
 # By.CLASS_NAME: Bu, Selenium'un bir öğe bulmak için kullanılan stratejilerden biridir. Bu strateji, bir HTML öğesini bulmak için sınıf adını kullanır.
 # "course.listing": Bu, aranan öğelerin sınıf adıdır. Yani, course.listing sınıfına sahip tüm HTML öğelerini bulmak istiyoruz.
@@ -49,5 +51,6 @@ listOfcourses = driver.find_elements(By.CLASS_NAME, "course.listing")
 
 
 # Test sonucunu hesapla (listOfcourses'in uzunluğu 6 ise True, değilse False)
+
 testResult = len(listOfcourses) == 6
 print(f"Test sonucu: {testResult}")
